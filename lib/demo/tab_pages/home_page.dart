@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.grey[100],
         appBar: AppBar(
-          title: Text('NINGHAO'),
+          title: Text('Flyingfish'),
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.search),
@@ -45,7 +45,7 @@ class HomePage extends StatelessWidget {
             SliverDemo(),
           ],
         ),
-        drawer: DrawerDemo(),
+        // drawer: DrawerDemo(),
         // bottomNavigationBar: BottomNavigationBarDemo(),
       ),
     );

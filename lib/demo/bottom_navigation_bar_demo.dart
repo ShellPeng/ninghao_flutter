@@ -4,6 +4,8 @@ import 'sliver_demo.dart';
 import 'view_demo.dart';
 import 'stepper_demo.dart';
 import 'card_demo.dart';
+import 'drawer_demo.dart';
+
 class BottomNavigationBarDemo extends StatefulWidget {
   @override
     State<StatefulWidget> createState() {
@@ -35,6 +37,7 @@ class _BottomNavigationBarDemoState extends State<BottomNavigationBarDemo> {
   @override
     Widget build(BuildContext context) {
       return Scaffold(
+        appBar: AppBar(title: Text('flyingfish'),),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
           onTap: _onTapHandler,
@@ -63,6 +66,7 @@ class _BottomNavigationBarDemoState extends State<BottomNavigationBarDemo> {
           index: _currentIndex,
           children: _tabControllers,
         ),
+        drawer: DrawerDemo()
       );
     }
 }

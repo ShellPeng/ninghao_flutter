@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'ninghao_demo_messages_all.dart';
 
-class NinghaoDemoLocalizations {
-  static NinghaoDemoLocalizations of(BuildContext context) {
-    return Localizations.of<NinghaoDemoLocalizations>(
+class FlyingfishDemoLocalizations {
+  static FlyingfishDemoLocalizations of(BuildContext context) {
+    return Localizations.of<FlyingfishDemoLocalizations>(
       context,
-      NinghaoDemoLocalizations
+      FlyingfishDemoLocalizations
     );
   }
 
-  static Future<NinghaoDemoLocalizations> load(Locale locale) {
+  static Future<FlyingfishDemoLocalizations> load(Locale locale) {
     final String name =
         locale.countryCode.isEmpty ? locale.languageCode : locale.toString();
     
@@ -18,7 +18,7 @@ class NinghaoDemoLocalizations {
 
     return initializeMessages(localeName).then((bool _) {
       Intl.defaultLocale = localeName;
-      return NinghaoDemoLocalizations();
+      return FlyingfishDemoLocalizations();
     });
   }
   
@@ -36,13 +36,13 @@ class NinghaoDemoLocalizations {
   );
 }
 
-class NinghaoDemoLocalizationsDelegate
-    extends LocalizationsDelegate<NinghaoDemoLocalizations> {
-  NinghaoDemoLocalizationsDelegate();
+class FlyingfishDemoLocalizationsDelegate
+    extends LocalizationsDelegate<FlyingfishDemoLocalizations> {
+  FlyingfishDemoLocalizationsDelegate();
 
   @override
-  Future<NinghaoDemoLocalizations> load(Locale locale) {
-    return NinghaoDemoLocalizations.load(locale);
+  Future<FlyingfishDemoLocalizations> load(Locale locale) {
+    return FlyingfishDemoLocalizations.load(locale);
   }
 
   @override
@@ -51,7 +51,7 @@ class NinghaoDemoLocalizationsDelegate
   }
 
   @override
-  bool shouldReload(LocalizationsDelegate<NinghaoDemoLocalizations> old) {
+  bool shouldReload(LocalizationsDelegate<FlyingfishDemoLocalizations> old) {
     return false;
   }
 }

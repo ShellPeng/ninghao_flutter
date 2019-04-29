@@ -42,7 +42,7 @@ class _TestDemoHomeState extends State<TestDemoHome> {
   }
 }
 
-class NinghaoTestDemo {
+class FlyingfishTestDemo {
   static greet(String name) {
     return 'hello $name ~~';
   }

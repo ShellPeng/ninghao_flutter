@@ -5,6 +5,7 @@ class DrawerDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Drawer(
+      elevation: 0.5,
       child: ListView(
         padding: EdgeInsets.zero,
         children: <Widget>[

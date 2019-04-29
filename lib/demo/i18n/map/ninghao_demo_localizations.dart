@@ -1,15 +1,15 @@
 import 'package:flutter/foundation.dart' show SynchronousFuture;
 import 'package:flutter/material.dart';
 
-class NinghaoDemoLocalizations {
+class FlyingfishDemoLocalizations {
   final Locale locale;
 
-  NinghaoDemoLocalizations(this.locale);
+  FlyingfishDemoLocalizations(this.locale);
 
-  static NinghaoDemoLocalizations of(BuildContext context) {
-    return Localizations.of<NinghaoDemoLocalizations>(
+  static FlyingfishDemoLocalizations of(BuildContext context) {
+    return Localizations.of<FlyingfishDemoLocalizations>(
       context,
-      NinghaoDemoLocalizations
+      FlyingfishDemoLocalizations
     );
   }
 
@@ -27,14 +27,14 @@ class NinghaoDemoLocalizations {
   }
 }
 
-class NinghaoDemoLocalizationsDelegate
-    extends LocalizationsDelegate<NinghaoDemoLocalizations> {
-  NinghaoDemoLocalizationsDelegate();
+class FlyingfishDemoLocalizationsDelegate
+    extends LocalizationsDelegate<FlyingfishDemoLocalizations> {
+  FlyingfishDemoLocalizationsDelegate();
 
   @override
-  Future<NinghaoDemoLocalizations> load(Locale locale) {
-    return SynchronousFuture<NinghaoDemoLocalizations>(
-        NinghaoDemoLocalizations(locale));
+  Future<FlyingfishDemoLocalizations> load(Locale locale) {
+    return SynchronousFuture<FlyingfishDemoLocalizations>(
+        FlyingfishDemoLocalizations(locale));
   }
 
   @override
@@ -43,7 +43,7 @@ class NinghaoDemoLocalizationsDelegate
   }
 
   @override
-  bool shouldReload(LocalizationsDelegate<NinghaoDemoLocalizations> old) {
+  bool shouldReload(LocalizationsDelegate<FlyingfishDemoLocalizations> old) {
     return false;
   }
 }

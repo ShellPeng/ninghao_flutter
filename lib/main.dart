@@ -27,7 +27,7 @@ class App extends StatelessWidget {
       //   return Locale('en', 'US');
       // },
       localizationsDelegates: [
-        NinghaoDemoLocalizationsDelegate(),
+        FlyingfishDemoLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
       ],
