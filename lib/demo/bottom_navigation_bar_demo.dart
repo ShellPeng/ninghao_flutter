@@ -37,7 +37,7 @@ class _BottomNavigationBarDemoState extends State<BottomNavigationBarDemo> {
   @override
     Widget build(BuildContext context) {
       return Scaffold(
-        appBar: AppBar(title: Text('flyingfish'),),
+        // appBar: AppBar(title: Text('flyingfish'),),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
           onTap: _onTapHandler,
